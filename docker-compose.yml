@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  frontend:
+    image: node:alpine
+    container_name: react_frontend
+    entrypoint: /bin/sh
+    ports:
+      - 5173:5173
+    working_dir: /srv/app
+    volumes:
+      - type: bind
+        source: ./frontend/
+        target: /srv/app
+    tty: true
+      
+  backend:
+    build: 
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: go_backend
+    # restart: always
+    ports:
+      - "8080:8080"
