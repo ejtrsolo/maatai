@@ -3,4 +3,7 @@
 ## Instrucciones de uso
 
 1. Al entrar en la pantalla principal, veremos algo como lo siguiente:
-    !(Imagen1)[http://ejtrsolo.guauwowzacatecas.com/imagen1.png]
+
+![Imagen1](http://ejtrsolo.guauwowzacatecas.com/imagen1.png)
+
+![Imagen1.1](screenshots/imagen1.png)
