@@ -125,19 +125,19 @@ function Home() {
                     step={1}
                     readOnly
                     style={{"--tw-ring-shadow": 'none'}}
-                    placeholder='Limite de descargas'/>
+                    placeholder='Límite de descargas'/>
                 </div>
                 <button className='bg-green-400 rounded-full text-white ml-5 mt-2 flex items-center' onClick={() => {setLimitFilesUser(limitFilesUser  + 1)}}>
                     <IoAddCircleOutline className='text-[20px]'/>
                 </button>
                 <button className='bg-teal-400 rounded-full text-white ml-5 mt-2 flex items-center' onClick={()=>{changeLimit()}}>
                     <IoSaveOutline className='text-[20px] mr-5'/>
-                    Cambiar Limite
+                    Cambiar límite
                 </button>
                 {urlFiles.length > 0 && !showShowDownloads ? 
                 <button className='bg-blue-600 rounded-full text-white ml-5 mt-2 flex items-center' onClick={()=>{setComplete(false); setShowDownloads(true);}}>
                     <IoCloudDownloadOutline className='text-[20px] mr-5'/>
-                    Iniciar descarga
+                    Iniciar descargas
                 </button> : null }
             </div>
 
@@ -147,10 +147,6 @@ function Home() {
                     <IoArrowUndoOutline className='text-[20px] mr-5'/>
                     Cancelar todo y regresar al listado
                 </button>}
-                {/* { !complete && <button className='bg-green-600 rounded-full text-white ml-5 mt-2 flex items-center' onClick={()=>{cleanQueue();}}>
-                    <IoCloseCircleOutline className='text-[20px] mr-5'/>
-                    Editar listado
-                </button>} */}
             </div> : null }
 
             {urlFiles.length > 0 && showShowDownloads ? <DownloadFiles files={urlFiles} limit={limitFiles} isCompleted={()=> {console.log("Complete;", showShowDownloads); setComplete(true); }}></DownloadFiles> :  null}

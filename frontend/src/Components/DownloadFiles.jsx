@@ -22,7 +22,7 @@ function DownloadFiles({files, limit, isCompleted}) {
             // Pasados 2 segundos, correr el intervalo que checará cada 2 segundos el status de los archivos.
             const interval = setInterval(() => {
                 updateStatusFiles()
-            }, 2 * 1000);
+            }, 4 * 1000);
             setLocal('interval', interval, false);
             isFirstRun.current = false;
         }
