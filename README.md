@@ -7,7 +7,7 @@ Para la instalación de la aplicación es necesario tener instalado:
 
 *   Instalar docker (en linux se encuentra como docker-ce)
 *   Instalar docker-compose
-*   Instalar make (en windows: https://parzibyte.me/blog/2020/12/30/instalar-make-windows/) (en linux: sudo apt-get update && sudo apt-get install make)
+*   Instalar make (en windows: https://parzibyte.me/blog/2020/12/30/instalar-make-windows/) (en linux: ```sudo apt-get update && sudo apt-get install make```)
 
 ## Instalación 🔧
 
@@ -59,7 +59,7 @@ Para ver las instrucciones de uso, abrir archivo README.md en [frontend/README.m
 
 Para ver el demo en vivo da clic (aquí)[https://current-download-react.onrender.com/]
 
-Para ver el API en vivo da clic (aquí)[https://current-download-go.onrender.com/api/]. Para ver más detalles de endpoints, ver el archivo (README del API)[api/README.md]
+Para ver el API en vivo da clic (aquí)[https://current-download-go.onrender.com/api/status]
 
 ## Construido con 🛠️
 

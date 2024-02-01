@@ -113,7 +113,7 @@ function Home() {
 
             <p className='mt-5 text-[20px] font-bold'>2. Límite de concurrencias: {limitFiles}</p>
             <div className='flex flex-row mt-1 w-full gap-5 items-center'>
-                <button className='bg-green-400 rounded-full text-white mr-5 mt-2 flex items-center' onClick={() => {setLimitFilesUser(limitFilesUser - 1)}}>
+                <button className='bg-green-400 rounded-full text-white mr-5 mt-2 flex items-center' onClick={() => {setLimitFilesUser(limitFilesUser <= 1 ? 1 : limitFilesUser - 1)}}>
                     <IoRemoveCircleOutline className='text-[20px]'/>
                 </button>
                 <div className='flex bg-white shadow-lg rounded-lg p-2'>
