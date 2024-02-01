@@ -6,4 +6,4 @@
 
 ![Imagen1](http://ejtrsolo.guauwowzacatecas.com/imagen1.png)
 
-![Imagen1.1](screenshots/imagen1.png)
+![Imagen1.1](../screenshots/imagen1.png)
