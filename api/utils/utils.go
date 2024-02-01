@@ -31,10 +31,11 @@ type DownloadStatus struct {
 	Status map[string]StatusResponse
 }
 
-func (ds *DownloadStatus) UpdateStatus(url string, status StatusResponse) {
+func (ds *DownloadStatus) UpdateStatus(url string, status StatusResponse, first bool) {
 	ds.Mu.Lock()
 	defer ds.Mu.Unlock()
-	if _, exists := ds.Status[url]; exists {
+	_, exists := ds.Status[url]
+	if first || exists {
 		ds.Status[url] = status
 	}
 }
@@ -114,7 +115,7 @@ func DownloadFile(url, destination string, status *DownloadStatus) error {
 			break
 		}
 
-		status.UpdateStatus(url, StatusResponse{Status: "downloading", Message: "Descarga en proceso", Progress: progress, TotalSize: totalSize, DownloadID: url})
+		status.UpdateStatus(url, StatusResponse{Status: "downloading", Message: "Descarga en proceso", Progress: progress, TotalSize: totalSize, DownloadID: url}, false)
 
 		file.Write(buffer[:n])
 	}
