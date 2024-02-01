@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { IoAttachOutline, IoSaveOutline, IoTrashOutline, IoCloudDownloadOutline, IoArrowUndoOutline, IoReorderFourOutline, IoAddCircleOutline, IoRemoveCircleOutline, IoCloseCircleOutline } from "react-icons/io5";
 import DownloadFiles from '../Components/DownloadFiles';
-import { Progress } from 'flowbite-react';
 import GlobalApi from '../Services/GlobalApi';
 
 function Home() {
