@@ -13,26 +13,6 @@ function Home() {
     const [limitFilesUser, setLimitFilesUser] = useState(5)
     const [limitFiles, setLimitFiles] = useState(5)
 
-    useEffect(() => {
-        setUrlFiles([
-            "http://guauwowzacatecas.com/PlataformaOLD/mascotitaszacatecanas.com.zip",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/05419bef-19eb-4455-95f0-cdd15e0dfc07.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/0d67183b-14c6-40cd-8b2d-155c40e17342.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/1f525bb5-e731-471a-bac6-aa68b85cd96e.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/764bc2c7-668c-418b-b138-044cdc79a614.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/7e0cc171-335c-4ec9-910f-b921ec436d2f.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/8385bbc3-832d-474a-82dd-4d6478627874.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/8c5947dd-51b1-4e2b-a2d6-b70e49e28f2c.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/9749cfa1-8978-47b7-9c4f-13ca7dc28aff.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/99df07da-e315-4583-b399-0cffad12cb2f.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/a6651414-47ee-40aa-997e-42c98a4fb3bb.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/a9b283be-52eb-4ba8-8c83-ad603c021628.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/ae60321a-da5d-4bd2-ad14-049fc7f4804c.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/c72a8ddb-f168-410b-9ce9-227cab1346b5.jpg",
-            "http://guauwowzacatecas.com/PlataformaOLD/PlataformaOLD/Panel_Users/Galeria/Fotos/aysb120490@gmail.com/e4d4f94e-468e-44ba-8149-1d53adafa840.jpg",
-        ])
-    }, [])
-
     const addUrl = (data) => {
         if (!data.url) {
             return 
